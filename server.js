@@ -1,10 +1,16 @@
 import express from 'express';
-import { request } from 'https';
+import appConfig from './config';
+import connect from './db';
 
 const app = express();
 
 /* eslint no-undef:0 */
-const port = process.env.PORT || 3000;
+const port = appConfig.port || 3000;
+
+// connect to DB;
+connect();
+
+// const connection = Mongoose
 
 // setup middleware
 app.use(express.json());
