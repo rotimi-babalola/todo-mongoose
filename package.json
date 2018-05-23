@@ -1,0 +1,37 @@
+{
+  "name": "todo-mongoose",
+  "version": "1.0.0",
+  "description": "Todo list with MongoDB database and Mongoose as the ORM",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rotimi-babalola/todo-mongoose.git"
+  },
+  "keywords": [
+    "Todo",
+    "list"
+  ],
+  "author": "Rotimi Babalola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rotimi-babalola/todo-mongoose/issues"
+  },
+  "homepage": "https://github.com/rotimi-babalola/todo-mongoose#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^2.0.7",
+    "eslint": "^4.19.1",
+    "eslint-plugin-flowtype": "^2.47.1",
+    "eslint-plugin-import": "^2.12.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.1.2"
+  }
+}
