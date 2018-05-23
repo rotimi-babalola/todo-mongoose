@@ -1,6 +1,8 @@
 import express from 'express';
+
 import appConfig from './config';
 import connect from './db';
+import userRoutes from './routes/user.routes';
 
 const app = express();
 
@@ -15,6 +17,10 @@ connect();
 // setup middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.use('/api/users', userRoutes);
+
+// TODO add error handler to route
 
 app.all('*', (request, response) => {
   response.send({
